@@ -3,7 +3,7 @@
 <br>
 Remote Shell Commander
 <br>
-一个极简的通过 Web 远程执行 Shell 或脚本命令的工具
+一个极简的通过 Web 远程执行 Shell 命令的工具
 <br>
 A minimalist tool for executing Shell commands remotely via the Web.
 </p>
