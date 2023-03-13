@@ -14,7 +14,7 @@ A minimalist tool for executing Shell commands remotely via the Web.
 
 适用于不方便 SSH 访问的情景中远程执行脚本或 Shell 命令，甚至可以用来做一些简单运维工作。
 
->⚠️警告：由于本程序本身不具有鉴权功能，请在使用时注意安全问题。
+>⚠️警告：由于程序本身不具有鉴权功能，请在使用时注意安全问题。
 
 ## ✨ 使用
 在 [Releases](https://github.com/JesseTzh/RSC/releases) 中下载最新的编译好的程序，并上传至服务器中。
