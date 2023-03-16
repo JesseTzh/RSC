@@ -19,19 +19,24 @@ A minimalist tool for executing Shell commands remotely via the Web.
 ## ✨ 使用
 在 [Releases](https://github.com/JesseTzh/RSC/releases) 中下载最新的编译好的程序，并上传至服务器中。
 
-可以使用 nothup 命令运行程序，例如：
-```
-nohup ./rsc &
-```
-并可以通过以下启动参数更改默认配置
+可以通过以下启动参数更改默认配置
 ```
 Usage of .\RSC.exe:
-  -c string
+  -d string
         The default executed command. (default "echo hello world")
         默认要执行的 shell 命令（不配置则为 "echo hello world"）
   -f    Enable the free command mode? (Use with caution)
         是否开启自由命令模式（开启后任何人均可以直接向服务器执行任何命令，请谨慎使用）
+  -o    Should the command execution result be returned to the front-end?(Use with caution)
+        是否将命令执行结果流式返回前台（同样需要谨慎使用）
   -p string
-        Change the default(6021) server port. (default "6021")
+        Change the default server port. (default "6021")
         修改默认端口
 ```
+
+一个简单的范例：
+```
+nohup ./rsc -p 49999 -d ./update.sh -o ture &
+```
+
+本范例使用 `nohub` 运行本程序，默认执行相同目录下一个叫 `update.sh` 的脚本并将结果返回前台
